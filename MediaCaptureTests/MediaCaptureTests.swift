@@ -2,9 +2,7 @@
 //  MediaCaptureTests.swift
 //  MediaCaptureTests
 //
-//  Created by Frederik Søndergaard Jensen on 27/03/2020.
-//  Copyright © 2020 Frederik Søndergaard Jensen. All rights reserved.
-//
+
 
 import XCTest
 @testable import MediaCapture

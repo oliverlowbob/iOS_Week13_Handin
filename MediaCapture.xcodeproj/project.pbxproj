@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84F3A9E2242E023D00029AD9 /* 5b431e08dd23a694cd7ad4e6f29b474c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84F3A9E1242E023D00029AD9 /* 5b431e08dd23a694cd7ad4e6f29b474c.jpg */; };
 		CCB98FF6242DE4530023763B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB98FF5242DE4530023763B /* AppDelegate.swift */; };
 		CCB98FF8242DE4530023763B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB98FF7242DE4530023763B /* SceneDelegate.swift */; };
 		CCB98FFA242DE4530023763B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB98FF9242DE4530023763B /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84F3A9E1242E023D00029AD9 /* 5b431e08dd23a694cd7ad4e6f29b474c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5b431e08dd23a694cd7ad4e6f29b474c.jpg; sourceTree = "<group>"; };
 		CCB98FF2242DE4530023763B /* MediaCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB98FF5242DE4530023763B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCB98FF7242DE4530023763B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				CCB98FFE242DE4540023763B /* Assets.xcassets */,
 				CCB99000242DE4540023763B /* LaunchScreen.storyboard */,
 				CCB99003242DE4540023763B /* Info.plist */,
+				84F3A9E1242E023D00029AD9 /* 5b431e08dd23a694cd7ad4e6f29b474c.jpg */,
 			);
 			path = MediaCapture;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				CCB99002242DE4540023763B /* LaunchScreen.storyboard in Resources */,
 				CCB98FFF242DE4540023763B /* Assets.xcassets in Resources */,
 				CCB98FFD242DE4530023763B /* Main.storyboard in Resources */,
+				84F3A9E2242E023D00029AD9 /* 5b431e08dd23a694cd7ad4e6f29b474c.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
