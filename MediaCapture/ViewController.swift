@@ -47,6 +47,8 @@ class ViewController: UIViewController {
                 let topBottomImage = textToImage(drawText: bottomText, inImage: topImage, atPoint: CGPoint(x: 0, y: topImage.size.height-100))
                 //sætter imageview til det nye billed med bund og toptekst
                 imageView.image = topBottomImage
+                savePhoto(topBottomImage)
+
             }
           }
         }
@@ -55,6 +57,7 @@ class ViewController: UIViewController {
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let p = touches.first?.location(in: view) {
             imageView.transform = CGAffineTransform(translationX: p.x, y: 0)
+            imageView.image = nil
         }
     }
     
@@ -95,6 +98,19 @@ class ViewController: UIViewController {
     // fjerner keyboardet, når der røres ved skærmen
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         imageTextField.endEditing(true)
+        bottomImageTextField.endEditing(true)
+    }
+    
+    //gemmer billedet
+    @IBAction func savePhoto(_ sender: AnyObject) {
+        let imageData = imageView.image!.pngData()
+        let compresedImage = UIImage(data: imageData!)
+        UIImageWriteToSavedPhotosAlbum(compresedImage!, nil, nil, nil)
+        
+        let alert = UIAlertController(title: "Saved", message: "Your image has been saved", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
     
 
@@ -143,6 +159,9 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
         //lukker editoren til sidst
         dismiss(animated: true, completion: nil)
     }
+    
+
+    
     
 }
 
